@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainbackground">
+
+    <LinearLayout
+        android:id="@+id/chlm_list_layout"
+        android:layout_width="242dip"
+        android:layout_height="413dip"
+        android:layout_marginLeft="96dip"
+        android:layout_marginTop="120dip"
+        android:background="@drawable/chlmlist">
+
+        <com.changhong.nativeplayer.CHLM_SDListView
+            android:id="@+id/chlm_storagedevice_list_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="62dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginBottom="0dip"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/liner_divider"
+            android:drawSelectorOnTop="false"
+            android:focusable="true"
+            android:listSelector="@drawable/chlmlist_selector"
+            android:nextFocusRight="@+id/chlm_video_id"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/chlm_video_id"
+        android:layout_width="265dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="351dip"
+        android:layout_marginTop="120dip"
+        android:background="@drawable/video"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/chlm_storagedevice_list_id" />
+
+    <ImageButton
+        android:id="@+id/chlm_audio_id"
+        android:layout_width="265dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="629dip"
+        android:layout_marginTop="120dip"
+        android:background="@drawable/audio"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ImageButton
+        android:id="@+id/chlm_picture_id"
+        android:layout_width="265dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="907dip"
+        android:layout_marginTop="120dip"
+        android:background="@drawable/picture"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ImageButton
+        android:id="@+id/chlm_filemanager_id"
+        android:layout_width="265dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="351dip"
+        android:layout_marginTop="333dip"
+        android:background="@drawable/filemanager"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/chlm_storagedevice_list_id" />
+
+    <ImageButton
+        android:id="@+id/chlm_doc_id"
+        android:layout_width="265dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="629dip"
+        android:layout_marginTop="333dip"
+        android:background="@drawable/doc"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ImageButton
+        android:id="@+id/chlm_rar_id"
+        android:layout_width="265dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="907dip"
+        android:layout_marginTop="333dip"
+        android:background="@drawable/rar"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="false" />
+
+    <ImageView
+        android:id="@+id/chlm_focus_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:visibility="invisible" />
+    <!--  -->
+    <TextView
+        android:id="@+id/chlm_sdevicename_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="217dip"
+        android:layout_marginTop="546dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/FONT_SIZE_NORMAL" />
+
+    <ProgressBar
+        android:id="@+id/chlm_sdevicePbar_id"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="600dip"
+        android:layout_height="20dip"
+        android:layout_marginLeft="580dip"
+        android:layout_marginTop="620dip"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/chlm_sdevicinfo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="960dip"
+        android:layout_marginTop="660dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/FONT_SIZE_NORMAL" />
+</FrameLayout>

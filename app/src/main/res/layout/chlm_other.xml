@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mainbackground"
+    android:gravity="center" >
+
+    <com.android.smart.terminal.nativeplayer.explorer.common.AnimationButton
+        android:id="@+id/button_UPnP"
+        style="@style/NormalButton2"       
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="100dp" />
+    
+	<com.android.smart.terminal.nativeplayer.explorer.common.AnimationButton
+        android:id="@+id/button_samba"
+        style="@style/NormalButton2"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/button_UPnP" />
+	
+    <com.android.smart.terminal.nativeplayer.explorer.common.AnimationButton
+        android:id="@+id/button_nfs"
+        style="@style/NormalButton"
+        android:layout_alignLeft="@id/button_UPnP"
+        android:layout_alignRight="@id/button_samba"
+        android:layout_below="@id/button_UPnP"
+        android:layout_marginTop="-10dp"  />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/button_nfs"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/button_nfs" >
+
+        <ImageView
+            android:id="@+id/hot_reflected_img_0"
+            android:layout_width="442dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/hot_reflected_img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="468dip" />
+
+        <ImageView
+            android:id="@+id/hot_reflected_img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="698dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

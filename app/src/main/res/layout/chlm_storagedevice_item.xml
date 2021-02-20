@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linout_storagedevice_item_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/storagedevice_item_image_id"
+        android:layout_width="25dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/local_icon" />
+
+    <TextView
+        android:id="@+id/storagedevice_item_id"
+        android:layout_width="200dip"
+        android:layout_height="82dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:ellipsize="marquee"
+        android:gravity="center|center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingRight="25dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/snow"
+        android:textSize="@dimen/FONT_SIZE_SMALL" />
+</LinearLayout>

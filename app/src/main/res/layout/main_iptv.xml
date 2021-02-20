@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainExplorerLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_blue"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="100dp">
+
+        <ImageButton
+            android:id="@+id/sortBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/sort_by_name"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/filterBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sortBut"
+            android:layout_toLeftOf="@id/sortBut"
+            android:background="@drawable/filter_by_file"
+            android:visibility="gone" />
+        <!--
+        <ImageButton android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:id="@+id/filterBut"
+        android:layout_alignParentRight="true" android:layout_marginTop="2dip"
+        android:background="@drawable/filter_by_file" />-->
+        <ImageButton
+            android:id="@+id/showBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/filterBut"
+            android:layout_toLeftOf="@id/filterBut"
+            android:background="@drawable/show_by_list"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/showBut" />
+    </RelativeLayout>
+
+    <!--
+        <TextView android:id="@+id/pageInfo"
+            android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+            android:layout_height="65dp" android:gravity="center"
+            android:textSize="40sp" android:visibility="gone" android:textColor="@color/white"/>
+    -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/listview_bg"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/main_right"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/toast_longpress"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+
+</RelativeLayout>
